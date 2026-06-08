@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Rich Obsidian/Dark Theme as the core design palette */
+    --color-bg: 224 25% 6%;
+    --color-surface: 224 20% 10%;
+    --color-text: 210 20% 98%;
+    --color-muted: 217 15% 65%;
+    --color-primary: 215 100% 60%;
+    --color-accent: 38 92% 54%;
+
+    /* Radius Design Tokens */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: hsl(var(--color-bg));
+    color: hsl(var(--color-text));
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    @apply antialiased min-h-screen flex flex-col selection:bg-accent/30 selection:text-text;
+    background-color: hsl(var(--color-bg));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), Georgia, serif;
+  }
+}
+
+/* Premium Gradient Mesh Background Shift Animation */
+@keyframes gradientMesh {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-mesh {
+  background: radial-gradient(circle at 10% 20%, hsl(var(--color-accent) / 0.08) 0%, transparent 45%),
+              radial-gradient(circle at 90% 80%, hsl(var(--color-primary) / 0.08) 0%, transparent 45%),
+              radial-gradient(circle at 50% 50%, hsl(var(--color-accent) / 0.03) 0%, transparent 60%);
+  background-size: 200% 200%;
+  animation: gradientMesh 20s ease infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--color-bg));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--color-surface));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--color-muted) / 0.5);
+}
