@@ -34,12 +34,12 @@ export async function POST(request: NextRequest) {
     await resend.emails.send({
       from: env.RESEND_FROM_EMAIL,
       to: env.TO_EMAIL,
-      subject: `New Finroles Mandate Request - ${name}`,
-      text: `You have received a new contact submission from your website.\n\n` +
-            `Name: ${name}\n` +
+      subject: `New Finroles Hiring Mandate - ${name}`,
+      text: `You have received a new hiring mandate submission from your website.\n\n` +
+            `Client: ${name}\n` +
             `Email: ${email}\n\n` +
-            `Message:\n${message}\n\n` +
-            `Manage submissions by visiting the admin dashboard using your secret.`,
+            `Mandate Details:\n${message}\n\n` +
+            `Review this mandate in the admin dashboard using your secret.`,
     });
 
     return Response.json({ success: true }, { status: 200 });

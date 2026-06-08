@@ -13,35 +13,35 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'Alpha Growth Fund Structure',
-    category: 'Asset Management',
+    title: 'Private Equity Fund Scale-Up',
+    category: 'Private Equity',
     description:
-      'Engineered an automated multi-asset rebalancing allocation model utilizing quantitative risk-parity optimizations.',
-    metrics: '+24% CAGR / 1.4 Sharpe Ratio',
+      'Recruited a comprehensive cohort of 5 investment associates and 1 senior VP for a premier renewable infrastructure buy-side fund.',
+    metrics: '100% Candidate Retention Rate',
     link: '#',
   },
   {
-    title: 'Cross-Border Acquisition Advisory',
-    category: 'M&A Advisory',
+    title: 'Systematic Trading Team Placement',
+    category: 'Quantitative Trading',
     description:
-      'Structured detailed fiscal, regulatory, and valuation models supporting a $450M cross-border corporate integration.',
-    metrics: '$12M Projected Synergy Savings',
+      'Managed a discrete lift-out of a 3-person algorithmic trading desk from a tier-1 bank to a multi-strategy hedge fund.',
+    metrics: '8 Weeks Placement Lifecycle',
     link: '#',
   },
   {
-    title: 'EcoEnergy Capital Optimization',
-    category: 'Corporate Finance',
+    title: 'Boutique M&A Advisory Build-Out',
+    category: 'Investment Banking',
     description:
-      'Navigated complex debt restructuring and structured equity issuance, lowering overall weighted average cost of capital.',
-    metrics: '2.15% Reduction in WACC',
+      'Sourced 4 senior TMT coverage bankers to establish and expand a newly launched boutique mergers & acquisitions desk.',
+    metrics: '4 Key Directors Placed',
     link: '#',
   },
   {
-    title: 'TradeFlow Liquidity Stress Audit',
+    title: 'Macro Fund Chief Risk Officer',
     category: 'Risk Management',
     description:
-      'Constructed algorithmic stress-testing workflows and currency hedge programs safeguarding transactional liquid flow.',
-    metrics: '99.9% Hedge Protection Level',
+      'Successfully placed the Chief Risk Officer (CRO) for a $2.5B global macro fund utilizing bespoke search protocols.',
+    metrics: '45-Day Retained Search Cycle',
     link: '#',
   },
 ];
@@ -76,10 +76,10 @@ export function Work() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div className="flex flex-col gap-4">
             <span className="text-xs font-semibold tracking-widest text-accent uppercase">
-              Selected Work
+              Placements
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-text">
-              Transformative Cases & Engagements
+              Elite Placement Success Stories
             </h2>
           </div>
           <div className="w-16 h-1 bg-accent rounded-full hidden md:block mb-4" />

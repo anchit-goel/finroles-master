@@ -66,7 +66,7 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
             <div>
               <h1 className="text-3xl font-bold font-display text-text">Submissions Desk</h1>
               <p className="text-sm text-muted mt-1">
-                Review and manage incoming partnership requests.
+                Review and manage incoming hiring mandates and talent queries.
               </p>
             </div>
             <div className="px-4 py-1.5 rounded bg-surface border border-muted/10 text-xs font-mono text-muted">
@@ -86,13 +86,13 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
                   <thead>
                     <tr className="border-b border-muted/10 bg-bg/50">
                       <th className="p-4 sm:p-5 text-xs font-mono uppercase tracking-wider text-muted font-semibold">
-                        Submitter
+                        Client / Candidate
                       </th>
                       <th className="p-4 sm:p-5 text-xs font-mono uppercase tracking-wider text-muted font-semibold">
                         Contact Email
                       </th>
                       <th className="p-4 sm:p-5 text-xs font-mono uppercase tracking-wider text-muted font-semibold">
-                        Message
+                        Mandate Details
                       </th>
                       <th className="p-4 sm:p-5 text-xs font-mono uppercase tracking-wider text-muted font-semibold text-right">
                         Date Submitted

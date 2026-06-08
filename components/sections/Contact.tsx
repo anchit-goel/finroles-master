@@ -89,10 +89,10 @@ export function Contact() {
               Contact
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-text">
-              Initiate a Partnership
+              Partner With Our Search Desk
             </h2>
             <p className="text-sm sm:text-base text-muted font-light leading-relaxed">
-              Connect with our advisory desk to schedule an initial consultation or discuss structured mandates.
+              Connect with our search consultants to submit a hiring mandate or enquire about candidate placements.
             </p>
           </div>
 
@@ -149,11 +149,11 @@ export function Contact() {
                   htmlFor="message"
                   className="text-xs font-mono text-muted uppercase tracking-wider"
                 >
-                  Message
+                  Mandate Details / Query
                 </label>
                 <Textarea
                   id="message"
-                  placeholder="Provide brief context regarding your project guidelines or advisory requirements..."
+                  placeholder="Describe the role specifications, location, seniority, or talent requirements..."
                   disabled={isSubmitting}
                   {...register('message')}
                 />

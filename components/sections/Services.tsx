@@ -23,13 +23,13 @@ const services: ServiceItem[] = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+          d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
         />
       </svg>
     ),
-    title: 'Wealth & Asset Management',
+    title: 'Executive Search',
     description:
-      'Bespoke portfolio allocations and optimization models. We coordinate risk tolerances with structured targets to maximize yield.',
+      'Retained search for C-suite roles, Managing Directors, Partners, and critical leadership hires across top financial institutions.',
   },
   {
     icon: (
@@ -44,13 +44,13 @@ const services: ServiceItem[] = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-.778.099-1.533.284-2.253"
+          d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5h16.5M4.5 19.5h15M5.25 4.5v15m13.5-15v15"
         />
       </svg>
     ),
-    title: 'Corporate Advisory',
+    title: 'Buy-Side Search',
     description:
-      'Providing end-to-end consulting for complex mergers, capital restructurings, valuation calculations, and tax planning frameworks.',
+      'Talent sourcing for Private Equity, Venture Capital, and Asset Management desks, spanning investment associates to portfolio managers.',
   },
   {
     icon: (
@@ -65,13 +65,13 @@ const services: ServiceItem[] = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751A11.959 11.959 0 0112 2.714z"
+          d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582"
         />
       </svg>
     ),
-    title: 'Risk Infrastructure',
+    title: 'Sell-Side Search',
     description:
-      'Stress-testing operations, identifying market exposure vulnerabilities, and formulating advanced hedging protocols to guard capital.',
+      'Recruitment for Investment Banking, M&A Advisory desks, Equity Research, Debt Capital Markets, and Institutional Sales & Trading.',
   },
   {
     icon: (
@@ -95,9 +95,9 @@ const services: ServiceItem[] = [
         />
       </svg>
     ),
-    title: 'Quantitative Research',
+    title: 'Quantitative & Risk',
     description:
-      'Deploying algorithmic analysis, econometric models, and big data resources to evaluate micro and macro industry patterns.',
+      'Sourcing quantitative researchers, mathematical modelers, risk officers, and algorithmic traders with high-end math backgrounds.',
   },
 ];
 
@@ -133,7 +133,7 @@ export function Services() {
             Services
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-text">
-            Bespoke Solutions for Dynamic Environments
+            Specialist Executive Search & Placement
           </h2>
           <div className="w-12 h-1 bg-accent mx-auto mt-2 rounded-full" />
         </div>

@@ -58,7 +58,7 @@ export function Hero() {
             variants={itemVariants}
             className="px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 backdrop-blur-md text-xs font-semibold uppercase tracking-widest text-accent"
           >
-            Advisory & Strategy Excellence
+            Elite Financial Talent Partners
           </motion.div>
 
           {/* Heading */}
@@ -66,9 +66,9 @@ export function Hero() {
             variants={itemVariants}
             className="text-4xl sm:text-6xl md:text-7xl font-bold font-display leading-[1.1] text-text"
           >
-            Engineering Your <br />
+            Sourcing Elite Talent <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
-              Financial Legacy
+              For Global Finance
             </span>
           </motion.h1>
 
@@ -77,7 +77,7 @@ export function Hero() {
             variants={itemVariants}
             className="text-lg sm:text-xl text-muted max-w-2xl font-light leading-relaxed"
           >
-            We align bespoke financial models, comprehensive risk strategies, and portfolio advisory with your long-term wealth objectives.
+            Bespoke executive search and specialist talent placement for Investment Banking, Private Equity, Hedge Funds, and Asset Management.
           </motion.p>
 
           {/* CTA Button */}
@@ -87,7 +87,7 @@ export function Hero() {
               onClick={handleScrollToContact}
               className="group gap-2 border border-accent/30"
             >
-              Get in Touch
+              Partner With Us
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
           </motion.div>

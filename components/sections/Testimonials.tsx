@@ -12,21 +12,21 @@ interface Testimonial {
 const testimonialsData: Testimonial[] = [
   {
     quote:
-      'Finroles transformed how we evaluate capital allocation. Their mathematical modeling gave our board clear pathways to optimize equity yield with complete predictability.',
+      'Finroles has been our exclusive executive search partner. They sourced our current CFO and three senior private equity associates, delivering profiles that exceeded all benchmarks.',
     name: 'Marcus Vance',
-    company: 'CEO, Vantage Growth Partners',
+    company: 'Head of Talent Acquisition, Vantage Buyout Partners',
   },
   {
     quote:
-      'The risk management framework they engineered has preserved asset value during multiple market shifts. Their precision and focus on detail are world-class.',
+      'The speed, discretion, and absolute domain understanding of Finroles is unmatched. They understand buy-side and systematic trading spaces inside and out.',
     name: 'Sarah Lindqvist',
-    company: 'Chief Risk Officer, Nord-Equities',
+    company: 'Managing Partner, Capital Quantitative Systems',
   },
   {
     quote:
-      'Incredibly sharp corporate strategy. They guided our international restructuring, resolving cross-border operational friction while reducing WACC significantly.',
+      'Their team managed a highly delicate desk build-out for our emerging markets advisory team. They are the premier choice for strategic financial hiring.',
     name: 'Jonathan Chen',
-    company: 'VP Finance, Apex Infrastructure',
+    company: 'VP Human Resources, Apex Capital Advisory',
   },
 ];
 

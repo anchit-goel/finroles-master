@@ -22,15 +22,15 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Finroles | Premium Financial Consulting & Portfolio',
+    default: 'Finroles | Elite Finance Recruitment & Executive Search',
     template: '%s | Finroles',
   },
   description:
-    'Tailored financial strategy, advisory, and asset management portfolio for clients seeking excellence and sustainable growth.',
+    'Bespoke executive search and specialist talent recruitment for Investment Banking, Private Equity, Hedge Funds, and Asset Management.',
   openGraph: {
-    title: 'Finroles | Premium Financial Consulting & Portfolio',
+    title: 'Finroles | Elite Finance Recruitment & Executive Search',
     description:
-      'Tailored financial strategy, advisory, and asset management portfolio for clients seeking excellence and sustainable growth.',
+      'Bespoke executive search and specialist talent recruitment for Investment Banking, Private Equity, Hedge Funds, and Asset Management.',
     url: 'https://finroles.com',
     siteName: 'Finroles',
     locale: 'en_US',
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Finroles | Premium Financial Consulting & Portfolio',
+    title: 'Finroles | Elite Finance Recruitment & Executive Search',
     description:
-      'Tailored financial strategy, advisory, and asset management portfolio for clients seeking excellence and sustainable growth.',
+      'Bespoke executive search and specialist talent recruitment for Investment Banking, Private Equity, Hedge Funds, and Asset Management.',
   },
 };
 

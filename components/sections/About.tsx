@@ -31,9 +31,9 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { value: '5+ Years', label: 'Strategic Consulting Experience' },
-  { value: '30+ Projects', label: 'Corporate Transformations Completed' },
-  { value: '100%', label: 'Client Satisfaction Rate' },
+  { value: '500+', label: 'Elite Finance Placements' },
+  { value: '15 Days', label: 'Average Time-to-Submit' },
+  { value: '98%', label: 'Candidate Retention Rate' },
 ];
 
 export function About() {
@@ -57,10 +57,10 @@ export function About() {
           <div className="flex flex-col gap-6">
             <motion.div variants={childVariants} className="flex flex-col gap-2">
               <span className="text-xs font-semibold tracking-widest text-accent uppercase">
-                Who We Are
+                Our Expertise
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-display text-text">
-                Navigating Complexity With Analytical Precision
+                Connecting Elite Minds With Global Finance Leaders
               </h2>
             </motion.div>
 
@@ -68,14 +68,14 @@ export function About() {
               variants={childVariants}
               className="text-muted leading-relaxed font-light text-base sm:text-lg"
             >
-              Finroles offers elite financial architecture, management consulting, and strategic advisory services. We dissect markets, build predictive mathematical models, and optimize capital structures. 
+              Finroles is a premier executive search and recruitment firm dedicated exclusively to the financial services sector. We partner with investment banks, private equity firms, and quantitative hedge funds to secure high-performance talent.
             </motion.p>
 
             <motion.p
               variants={childVariants}
               className="text-muted leading-relaxed font-light text-base sm:text-lg"
             >
-              Our strategy blends quantitative analysis with decades of corporate finance expertise to construct tailored solutions. Whether structuring cross-border transactions or refining internal budgeting frameworks, we bring unmatched focus to your goals.
+              Our specialists are former finance professionals who speak your language. We understand the high standards of buy-side, sell-side, and quantitative research markets, leveraging proprietary networks to deliver candidates who immediately drive alpha.
             </motion.p>
           </div>
 
@@ -90,7 +90,7 @@ export function About() {
                 <div className="w-3 h-3 rounded-full bg-red-500/80" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                 <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                <span className="text-xs text-muted/60 font-mono ml-2">strategic_forecast.sh</span>
+                <span className="text-xs text-muted/60 font-mono ml-2">talent_search_query.sh</span>
               </div>
               <span className="text-xs font-semibold px-2 py-0.5 rounded bg-accent/10 text-accent uppercase tracking-wider font-mono">
                 Active
@@ -137,21 +137,21 @@ export function About() {
               </svg>
 
               <div className="z-10 bg-bg/80 border border-muted/10 rounded-lg p-3 backdrop-blur-md absolute top-10 right-4 font-mono text-[10px] text-muted flex flex-col gap-1">
-                <span className="text-text font-bold">PROJECTION SET</span>
-                <span>ROI: +38.5%</span>
-                <span>VOLATILITY: LOW</span>
+                <span className="text-text font-bold">TALENT POOL</span>
+                <span>PLACED: 98%</span>
+                <span>MATCH RATE: 99%</span>
               </div>
             </div>
 
             {/* Bottom stats mockup */}
             <div className="flex justify-between items-center bg-bg/40 border border-muted/10 rounded-xl p-4">
               <div className="flex flex-col">
-                <span className="text-[10px] text-muted uppercase font-mono tracking-wider">Asset Allocation</span>
-                <span className="text-sm font-semibold text-text font-display">Equities & Bonds</span>
+                <span className="text-[10px] text-muted uppercase font-mono tracking-wider">Active Searches</span>
+                <span className="text-sm font-semibold text-text font-display">Private Equity & VC</span>
               </div>
               <div className="flex flex-col items-end">
-                <span className="text-[10px] text-muted uppercase font-mono tracking-wider">Risk Profile</span>
-                <span className="text-sm font-semibold text-accent font-display">Conservative-Growth</span>
+                <span className="text-[10px] text-muted uppercase font-mono tracking-wider">Specialization</span>
+                <span className="text-sm font-semibold text-accent font-display">Buy-Side Focus</span>
               </div>
             </div>
           </motion.div>
