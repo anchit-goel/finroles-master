@@ -11,17 +11,18 @@ const partners = [
 
 export function PartnerLogos() {
   return (
-    <section className="partner-logos-section">
-      <div className="partner-logos-inner">
-        {/* Section label — matches site-wide pattern */}
+    <section className="py-14 px-6 bg-[hsl(0_0%_5%)] overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col items-center gap-10">
+
+        {/* Section label — identical class string used across all other sections */}
         <span className="text-xs font-semibold tracking-widest text-accent uppercase font-mono">
           Companies We&apos;ve Worked With
         </span>
 
         {/* Logo strip */}
-        <div className="partner-logos-strip">
+        <div className="flex flex-wrap justify-center items-center gap-x-14 gap-y-10 sm:gap-x-16">
           {partners.map((partner) => (
-            <div key={partner.name} className="partner-logo-slot">
+            <div key={partner.name} className="flex items-center justify-center">
               {/* logo: {partner.name} */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -29,11 +30,12 @@ export function PartnerLogos() {
                 alt={`${partner.name} logo`}
                 width={140}
                 height={56}
-                className="partner-logo-img"
+                className="partner-logo-img w-[140px] h-[56px]"
               />
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
