@@ -162,14 +162,7 @@
   gap: 2.5rem;
 }
 
-.partner-logos-label {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: hsl(var(--color-muted) / 0.5);
-  font-family: var(--font-body), sans-serif;
-}
+
 
 .partner-logos-strip {
   display: flex;
