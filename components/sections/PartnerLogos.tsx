@@ -11,7 +11,7 @@ const partners = [
 
 export function PartnerLogos() {
   return (
-    <section className="py-14 px-6 bg-[hsl(0_0%_5%)] overflow-hidden">
+    <section className="py-14 px-6 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-10">
 
         {/* Section label — identical class string used across all other sections */}
