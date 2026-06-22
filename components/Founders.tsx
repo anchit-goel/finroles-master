@@ -20,7 +20,7 @@ const FOUNDERS: Founder[] = [
     id: 'founder-1',
     name: 'CA Piyush Bathwal',
     role: 'Co-Founder',
-    description: 'Add a short professional bio describing the founder\'s background, previous ventures, expertise, and their mission at Finroles. Typically 2-3 sentences.',
+    description: 'SRCC graduate with 5+ years of experience across EY and Standard Chartered Bank in finance and markets. Has built deep relationships across the finance industry and professional ecosystem.',
     linkedin: 'https://linkedin.com/in/username1',
     email: 'mailto:piyush@finroles.com',
     imagePlaceholderText: 'F1',
@@ -29,11 +29,12 @@ const FOUNDERS: Founder[] = [
   {
     id: 'founder-2',
     name: 'CA Ishant Goel',
-    role: 'Co-Founder & CEO',
-    description: 'Add a short professional bio describing the founder\'s technical background, engineering background, previous projects, and what they build at Finroles.',
+    role: 'Co-Founder',
+    description: '5+ years at EY across auditing, taxation, advisory, and financial due diligence. Expertise in finance and manufacturing hiring, with strong ties to finance academia, students, and faculty.',
     linkedin: 'https://linkedin.com/in/username2',
     email: 'mailto:ishant@finroles.com',
     imagePlaceholderText: 'F2',
+    imageUrl: '/assets/Ishant.jpeg',
   },
 ];
 
@@ -58,12 +59,12 @@ export default function Founders() {
               <div className={styles.imageWrapper}>
                 <div className={styles.imageContainer}>
                   {founder.imageUrl ? (
-                    <Image 
-                      src={founder.imageUrl} 
-                      alt={founder.name} 
+                    <Image
+                      src={founder.imageUrl}
+                      alt={founder.name}
                       fill
                       sizes="(max-width: 900px) 80px, 120px"
-                      className={styles.founderImage} 
+                      className={styles.founderImage}
                     />
                   ) : (
                     <div className={styles.placeholderImage}>
