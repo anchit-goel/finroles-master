@@ -15,6 +15,7 @@ export default function Footer() {
             <a href="#features" className={styles.navLink}>Features</a>
             <a href="#how-it-works" className={styles.navLink}>How It Works</a>
             <a href="#testimonials" className={styles.navLink}>Testimonials</a>
+            <Link href="/vision-mission" className={styles.navLink}>Vision & Mission</Link>
             <a href="#contact" className={styles.navLink}>Contact</a>
           </nav>
 
