@@ -89,7 +89,6 @@ export default function Features() {
     <section id="features" className={styles.featuresSection} ref={sectionRef}>
       <div className={styles.container}>
         <div className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
-          <span className="label-chip">What Finroles Does</span>
           <h2 className={styles.heading}>Everything your hiring team needs</h2>
         </div>
 

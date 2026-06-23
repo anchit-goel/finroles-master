@@ -21,7 +21,7 @@ const FOUNDERS: Founder[] = [
     name: 'CA Piyush Bathwal',
     role: 'Co-Founder',
     description: 'SRCC graduate with 5+ years of experience across EY and Standard Chartered Bank in finance and markets. Has built deep relationships across the finance industry and professional ecosystem.',
-    linkedin: 'https://linkedin.com/in/username1',
+    linkedin: 'https://www.linkedin.com/in/piyushbathwal/',
     email: 'mailto:piyush@finroles.com',
     imagePlaceholderText: 'F1',
     imageUrl: '/assets/piyush.jpeg',
@@ -31,7 +31,7 @@ const FOUNDERS: Founder[] = [
     name: 'CA Ishant Goel',
     role: 'Co-Founder',
     description: '5+ years at EY across auditing, taxation, advisory, and financial due diligence. Expertise in finance and manufacturing hiring, with strong ties to finance academia, students, and faculty.',
-    linkedin: 'https://linkedin.com/in/username2',
+    linkedin: 'https://www.linkedin.com/in/ca-ishant-goel/',
     email: 'mailto:ishant@finroles.com',
     imagePlaceholderText: 'F2',
     imageUrl: '/assets/Ishant.jpeg',
@@ -45,7 +45,6 @@ export default function Founders() {
     <section id="founders" className={styles.foundersSection} ref={sectionRef}>
       <div className={styles.container}>
         <div className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
-          <span className="label-chip">Leadership</span>
           <h2 className={styles.heading}>Meet the Founders</h2>
         </div>
 

@@ -27,13 +27,54 @@
 
 .headline {
   font-size: 4.5rem;
-  line-height: 1.1;
+  line-height: 1.15;
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: var(--space-24);
   opacity: 0;
   animation: fadeUp 1000ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: 0ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.staticTop,
+.staticBottom {
+  display: block;
+}
+
+.animatedLine {
+  display: block;
+  min-height: 1.2em;
+}
+
+.animatedWord {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* Cursor: solid while typing/deleting */
+.cursor {
+  color: var(--color-accent);
+  margin-left: 2px;
+  font-weight: 300;
+}
+
+/* Solid — no blink during typing/deleting */
+.cursorActive {
+  opacity: 1;
+}
+
+/* Blink when idle (word fully shown or between words) */
+.cursorBlink {
+  animation: cursorBlink 0.7s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
 
 .subheadline {
@@ -113,7 +154,7 @@
   }
 
   .headline {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
 
   .ctaGroup {

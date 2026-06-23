@@ -35,8 +35,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-24);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
@@ -59,7 +61,6 @@
 .card:nth-child(1) { animation-delay: 0ms; }
 .card:nth-child(2) { animation-delay: 150ms; }
 .card:nth-child(3) { animation-delay: 300ms; }
-.card:nth-child(4) { animation-delay: 450ms; }
 
 .card:hover {
   border-color: var(--color-accent);

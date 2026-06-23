@@ -1,8 +1,7 @@
 .marqueeSection {
-  background-color: var(--color-bg);
-  padding: var(--space-48) 0;
-  border-bottom: 1px solid var(--color-border);
-  overflow: hidden;
+  background-color: #ffffff;
+  padding: var(--space-64) var(--space-24);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .container {
@@ -13,88 +12,87 @@
 
 .label {
   text-align: center;
-  color: var(--color-text-muted);
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: var(--space-32);
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111111;
+  margin-bottom: var(--space-48);
 }
 
-.trackWrapper {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+/* 2 rows × 3 columns */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px var(--space-24);
+}
+
+.logoCell {
   display: flex;
-}
-
-/* Premium gradient overlay fade effects on the sides */
-.trackWrapper::before,
-.trackWrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 150px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.trackWrapper::before {
-  left: 0;
-  background: linear-gradient(to right, #000000, transparent);
-}
-
-.trackWrapper::after {
-  right: 0;
-  background: linear-gradient(to left, #000000, transparent);
-}
-
-.track {
-  display: inline-flex;
   align-items: center;
-  white-space: nowrap;
-  animation: marquee 40s linear infinite;
-}
-
-.item {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-32);
-  padding: 0 var(--space-32);
-}
-
-.name {
-  color: var(--color-text-primary);
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  opacity: 0.3;
+  justify-content: center;
+  padding: var(--space-24);
+  min-height: 140px;
   transition: opacity 300ms ease;
 }
 
-.name:hover {
-  opacity: 0.8;
+.logoCell:hover {
+  opacity: 1;
 }
 
-.separator {
-  color: var(--color-border);
-  font-weight: 400;
+/* Greyscale by default, full color on hover */
+.logoImg {
+  width: 100%;
+  max-width: 260px;
+  height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
   opacity: 0.5;
-  user-select: none;
+  transition: filter 350ms ease, opacity 350ms ease;
+}
+
+/* Large logo variant for first 4 logos */
+.logoCellLarge {
+  min-height: 200px;
+}
+
+.logoImgLarge {
+  max-width: 100%;
+  width: 100%;
+  height: 160px;
+}
+
+.logoCell:hover .logoImg,
+.logoCell:hover .logoImgLarge {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
   .marqueeSection {
-    padding: var(--space-32) 0;
+    padding: var(--space-48) var(--space-16);
   }
 
-  .name {
-    font-size: 1rem;
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-16);
   }
 
-  .trackWrapper::before,
-  .trackWrapper::after {
-    width: 60px;
+  .logoCell {
+    padding: var(--space-16);
+    min-height: 100px;
+  }
+
+  .logoCellLarge {
+    min-height: 140px;
+  }
+
+  .logoImg {
+    max-width: 180px;
+    height: 72px;
+  }
+
+  .logoImgLarge {
+    height: 110px;
   }
 }

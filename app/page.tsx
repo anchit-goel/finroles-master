@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
+import FinrolesDifference from '@/components/FinrolesDifference';
 import Testimonials from '@/components/Testimonials';
 import Founders from '@/components/Founders';
 import CTASection from '@/components/CTASection';
@@ -17,6 +18,7 @@ export default function Home() {
         <Marquee />
         <Features />
         <HowItWorks />
+        <FinrolesDifference />
         <Testimonials />
         <Founders />
         <CTASection />

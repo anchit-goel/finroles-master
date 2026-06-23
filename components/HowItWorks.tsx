@@ -10,8 +10,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className={styles.howItWorksSection} ref={sectionRef}>
       <div className={styles.container}>
         <div className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
-          <span className="label-chip">Process</span>
-          <h2 className={styles.heading}>Hire in three steps</h2>
+          <h2 className={styles.heading}>Hire in four steps</h2>
         </div>
 
         <div className={`${styles.stepsWrapper} ${isVisible ? styles.visible : ''}`}>
@@ -25,19 +24,19 @@ export default function HowItWorks() {
               <div className={styles.numberWrapper}>
                 <div className={styles.number}>01</div>
               </div>
-              <h3 className={styles.stepTitle}>Define the Role</h3>
+              <h3 className={styles.stepTitle}>Initial Consultation</h3>
               <p className={styles.stepDescription}>
-                Drop in your JD or let AI draft one from a short brief.
+                A thorough discussion to understand business requirements.
               </p>
             </div>
-            
+
             <div className={styles.step}>
               <div className={styles.numberWrapper}>
                 <div className={styles.number}>02</div>
               </div>
-              <h3 className={styles.stepTitle}>Get Matched Candidates</h3>
+              <h3 className={styles.stepTitle}>Customized Talent Mapping</h3>
               <p className={styles.stepDescription}>
-                AI surfaces best-fit profiles ranked by role compatibility.
+                Utilizing tailored strategies to identify the right candidates.
               </p>
             </div>
 
@@ -45,13 +44,24 @@ export default function HowItWorks() {
               <div className={styles.numberWrapper}>
                 <div className={styles.number}>03</div>
               </div>
-              <h3 className={styles.stepTitle}>Hire with Confidence</h3>
+              <h3 className={styles.stepTitle}>Interviews & Assessments</h3>
               <p className={styles.stepDescription}>
-                Structured process, scorecards, and tracked outcomes — every time.
+                Rigorous evaluation to ensure the best fit for business requirements.
+              </p>
+            </div>
+
+            <div className={styles.step}>
+              <div className={styles.numberWrapper}>
+                <div className={styles.number}>04</div>
+              </div>
+              <h3 className={styles.stepTitle}>Regular Updates & Feedback</h3>
+              <p className={styles.stepDescription}>
+                Regular checks with company and candidate to improve alignment.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
