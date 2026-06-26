@@ -8,7 +8,7 @@ const LOGOS = [
   { src: '/cofiser.png',          alt: 'Cofiser' },
   { src: '/dot-key.png',          alt: 'Dot & Key' },
   { src: '/ekvity.png',           alt: 'Ekvity' },
-  { src: '/minimines-bg.png',     alt: 'Minimines' },
+  { src: '/minimines.png',        alt: 'Minimines' },
   { src: '/yourgrowthlabs.webp',  alt: 'Your Growth Labs' },
 ];
 
@@ -31,9 +31,10 @@ export default function Marquee() {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    fill
-                    sizes="(max-width: 768px) 260px, 360px"
+                    width={260}
+                    height={100}
                     className={styles.logoImg}
+                    style={{ objectFit: 'contain', width: 'auto', height: '100%' }}
                   />
                 </div>
               </div>
