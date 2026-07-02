@@ -1,7 +1,12 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import styles from './Hero.module.css';
+
+const MatchingLattice = dynamic(() => import('./MatchingLattice'), {
+  ssr: false,
+});
 
 const WORDS = ['CFO', 'Plant Head', 'CMO', 'VP Finance', 'Marketing Lead', 'Operations Head'];
 const TYPE_SPEED = 80;
@@ -68,6 +73,7 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
+      <MatchingLattice />
       <div className={styles.container}>
 
         <h1 className={styles.headline}>

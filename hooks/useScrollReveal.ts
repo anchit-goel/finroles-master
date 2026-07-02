@@ -22,7 +22,7 @@ export function useScrollReveal<T extends HTMLElement>(
     return () => {
       observer.unobserve(element);
     };
-  }, [ref, options, ref.current]);
+  }, [ref, options]);
 
   return hasRevealed;
 }

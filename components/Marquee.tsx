@@ -35,10 +35,9 @@ export default function Marquee() {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={260}
-                    height={100}
+                    fill
+                    sizes="(max-width: 768px) 220px, 260px"
                     className={styles.logoImg}
-                    style={{ objectFit: 'contain', width: 'auto', height: '100%' }}
                   />
                 </div>
               </div>
